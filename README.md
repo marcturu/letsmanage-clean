@@ -41,7 +41,17 @@ git clone https://github.com/marcturu/LetsManage.git
 cd LetsManage
 ```
 
-### a2. Run locally
+### a2. Firebase configuration
+1. Copy the example file to create your real `.env`:
+```bash
+cd backend
+cp .env.example .env
+```
+3. Access [Google Cloud Console → IAM & Admin → Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts) of the LetsManage project.
+4. Create a **Service Account Key (JSON)** if you don't already have one. 
+5. Add the credentials to the `.env` file.
+
+### a3. Run locally
 Open two terminals and start **frontend** and **backend**:
 
 ```bash
