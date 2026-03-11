@@ -56,9 +56,6 @@ npm start
 
 The app will be available at **http://localhost:3000** (frontend) and **http://localhost:5000** (backend).  
 
-> For the purpose of simplifying cloning and execution, this repository intentionally includes the `node_modules` files in some directories. This approach has been adopted strictly for demonstration purposes and the files do not contain any sensitive information.  
-> In a production or professional environment, these files would be excluded following standard best practices.
-
 ### b1. Try the web application
 You can try the application using either the Vercel deployment (for visual testing in the browser) or the Heroku deployment (to test API routes).
 
