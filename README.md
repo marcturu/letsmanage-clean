@@ -37,8 +37,8 @@ npm -v
 
 ### a1. Clone the repository
 ```bash
-git clone https://github.com/marcturu/LetsManage.git
-cd LetsManage
+git clone https://github.com/marcturu/letsmanage-clean.git
+cd letsmanage-clean
 ```
 
 ### a2. Firebase configuration
