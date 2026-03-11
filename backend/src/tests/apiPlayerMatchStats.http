@@ -1,0 +1,19 @@
+### Get All by Player
+GET http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_infantil_b_Marc/players/marc_turu_roca/playermatchstats
+
+### Get by Id
+GET http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_infantil_b_Marc/players/marc_turu_roca/playermatchstats/ESCOLA PIA TERRASSA_infantil_b_Marc_Jornada 1_marc_turu_roca
+
+### Update PlayerMatchStats 
+GET http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_infantil_b_Marc/players/marc_turu_roca/playermatchstats/ESCOLA PIA TERRASSA_infantil_b_Marc_Jornada 1_marc_turu_roca
+Content-Type:application/json
+
+{
+  "timePlayed": 90,
+  "goals": 1,
+  "assists": 3,
+  "yellowCards": 1,
+  "redCards": 1,
+  "shots": 4,
+  "shotsOnTarget": 2
+}

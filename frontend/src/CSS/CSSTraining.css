@@ -1,0 +1,355 @@
+.main-container-training {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+.content-training {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-training {
+    width: 100%;
+    background-color: #dddddd;
+    padding: 0.5vw;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.left-column-training {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.app-title-training {
+    font-size: 3vw;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.5vw; 
+    margin-top: 0vw;
+}
+
+.training-duration-training {
+    font-size: 1.5vw;
+    color: black;
+}
+
+.right-column-training {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    margin-top: 0vw;
+    margin-right: 0.5vw;
+}
+
+.training-date-training,
+.training-location-training  {
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: right; 
+}
+
+.edit-training-button {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1vw;
+    margin-left: auto;
+    margin-top: 1vw;
+}
+
+.edit-training-button button {
+    padding: 0.5vw 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+    border: none;
+    background-color: #008CBA;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-training-button button:hover {
+    background-color: #006f8f;
+}
+
+.modal-edit-training {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-edit-content-training {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    position: relative; 
+}
+
+.modal-edit-content-training h2 {
+    text-align: center;
+}
+
+.modal-edit-content-training form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.modal-edit-content-training form input {
+    padding: 0.5vw;
+    font-size: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.close-edit-training {
+    color: #aaa;
+    font-size: 3em;
+    font-weight: bold;
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    cursor: pointer;
+}
+
+.close-.close-edit-training,
+.close-.close-edit-training {
+    color: black;
+}
+
+.exercises-list-edit-training ul {
+    font-size: 1.5rem; 
+    text-align: left; 
+}
+
+.exercises-list-edit-training li {
+    font-size: 1.5rem;
+}
+
+.confirm-edit-training-button {
+    margin-top: 1vw;
+    padding: 0.5vw 1vw;
+    font-size: 1vw;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-edit-training-button:hover {
+    background-color: #45a049;
+}
+
+.training {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin-top: 2vw;
+    gap: 2vw; 
+}
+
+.training-photo-training {
+    flex: 1;
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-right: 2px solid black;
+    padding-right: 2vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.training-photo-training img {
+    width: 90%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.training-photo-training img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.7); 
+}
+
+.training-info-training {
+    flex: 1; 
+    min-width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.5vw;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    align-items: flex-start;
+}
+
+.training-info-training h2 {
+    margin: 0;
+    font-size: 1.5vw;
+    text-align: left;
+    margin-bottom: 0.25vw;
+}
+
+.training-info-training p {
+    font-size: 1.2vw;
+    margin-top: 0;
+    margin-bottom: 1.5vw;
+    text-align: left;
+}
+
+.training-info-training ul {
+    padding-left: 2vw;
+    list-style-type: disc;
+    margin: 0;
+}
+
+.training-info-training li {
+    font-size: 1.2vw;
+    text-align: left;
+}
+
+.training-info-training ul li:last-child {
+    margin-bottom: 1.5vw; 
+}
+
+.training-info-id-training {
+    margin-bottom: 3vw;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+/* Contenedor del spinner */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .app-title-training {
+        font-size: 5vw;
+    }
+
+    .training-date-training,
+    .training-location-training {
+        font-size: 3.5vw;
+    }
+
+    .training {
+        flex-direction: column;
+        gap: 1.5vw;
+    }
+
+    .training-photo-training {
+        min-width: 80%;
+        padding-right: 0;
+        border-right: none;
+        margin-bottom: 2vw;
+    }
+
+    .training-info-training {
+        width: 100%;
+        padding: 3vw;
+    }
+
+    .training-info-training h2 {
+        font-size: 4vw;
+    }
+
+    .training-info-training p,
+    .training-info-training ul {
+        font-size: 3.5vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .training-info-training li {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-title-training {
+        font-size: 6vw;
+    }
+
+    .training-date-training,
+    .training-location-training {
+        font-size: 4vw;
+    }
+
+    .training-info-training {
+        padding: 4vw;
+    }
+
+    .training-info-training h2 {
+        font-size: 5vw;
+    }
+
+    .training-info-training p,
+    .training-info-training ul {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .training-info-training li {
+        font-size: 4vw;
+    }
+}

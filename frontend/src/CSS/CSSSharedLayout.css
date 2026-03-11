@@ -1,0 +1,81 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+}
+
+.sidebar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 250px; 
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+}
+
+.menu {
+    flex-grow: 1; 
+    margin-top: 50px;
+}
+
+.menu-item {
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item:hover {
+    background-color: #444444;
+    transform: scale(1.1);
+}
+
+.bottom-section {
+    margin-top: auto; 
+    margin-bottom: 20%;
+}
+
+.logo-img {
+    background-color: transparent;
+    width: 250px;  
+    height: auto;  
+    display: block; 
+    margin-top: -10px;
+    margin-left: -25px;
+}
+
+.click-logo-sharedlayout {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.click-logo-sharedlayout img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.click-logo-sharedlayout:hover img {
+    transform: scale(1.1);
+    filter: invert(1);
+}
+
+.content-sharedlayout {
+    margin-left: 270px; 
+    flex-grow: 1; 
+    padding: 20px;
+    background-color: #f0f0f0;
+    height: 100vh;
+    overflow-y: auto;
+}

@@ -1,0 +1,5 @@
+### Get all clubs
+GET http://localhost:5000/clubs
+
+### Get Club by ID
+GET http://localhost:5000/clubs/ESCOLA PIA TERRASSA

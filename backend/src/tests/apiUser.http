@@ -1,0 +1,36 @@
+### Get all Users
+GET http://localhost:5000/users
+
+### Get User by ID
+GET http://localhost:5000/users/Marc
+
+### Create a new user instance
+POST http://localhost:5000/users
+Content-Type:application/json
+
+{
+  "username": "Marc",
+  "name": "Marc",
+  "surname": "Turu",
+  "password": "1"
+}
+
+### UPDATE [CORRECT]
+PATCH http://localhost:5000/users/MaTuX
+Content-Type:application/json
+
+{
+  "password": "pwd123456578"
+}
+
+### Delete User 
+DELETE http://localhost:5000/users/Marc
+
+### Verify User credentials
+POST http://localhost:5000/verifyUser
+Content-Type:application/json
+
+{
+  "username": "Marc",
+  "password": "12345678"
+}

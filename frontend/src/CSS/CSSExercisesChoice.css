@@ -1,0 +1,373 @@
+.main-container-exercises-choice {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.content-exercises-choice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-exercises-choice {
+    width: 100%;
+    background-color: #dddddd;
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.app-title-exercises-choice {
+    font-size: 3rem;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+
+.filter-exercises-choice {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    margin: 2rem 0;
+    align-items: center;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    background-color: #ffffff; 
+    z-index: 1000; 
+    padding: 1rem; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.filter-exercises-choice label {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 600;
+}
+
+.filter-exercises-choice select {
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+}
+
+.filter-exercises-choice select:focus {
+    background-color: #ffffff;
+}
+
+.toggle-container-exercises-choice {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0rem;
+}
+
+.toggle-label-exercises-choice {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 600;
+    margin-right: 0.75rem;
+}
+
+.toggle-switch-exercises-choice {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+    background-color: #ccc;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.toggle-switch-exercises-choice input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-switch-exercises-choice .slider-exercises-choice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.toggle-switch-exercises-choice input:checked + .slider-exercises-choice {
+    transform: translateX(2rem);
+    background-color: #3dec55;
+}
+
+.error-exercises-choice {
+    color: red;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.exercises-list-exercises-choice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.exercise-item-exercises-choice {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    max-width: 97%;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.exercise-item-exercises-choice:hover {
+    background-color: #333333;
+    color: white;
+    box-shadow: 0 1.1rem 1.4rem rgba(0, 0, 0, 0.65);
+}
+
+.exercise-item-exercises-choice:hover .exercise-photo-exercises-choice img {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+}
+
+.exercise-photo-exercises-choice {
+    flex: 1;
+    min-width: 18rem;
+    max-width: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.exercise-photo-exercises-choice img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.exercise-info-exercises-choice {
+    flex: 2;
+    min-width: 22rem;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.exercise-header-exercises-choice {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.exercise-name-exercises-choice {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.exercise-item-exercises-choice:hover .exercise-name-exercises-choice,
+.exercise-item-exercises-choice:hover .exercise-duration-exercises-choice,
+.exercise-item-exercises-choice:hover .exercise-personalized-exercises-choice {
+    color: white;
+}
+
+.exercise-duration-personalized-exercises-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.exercise-duration-exercises-choice,
+.exercise-personalized-exercises-choice {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.exercise-duration-icon-exercises-choice,
+.exercise-personalized-icon-exercises-choice {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+
+.exercise-personalized-exercises-choice .yes-exercises-choice {
+    color: #3dec55;
+    font-style: italic;
+}
+
+.exercise-personalized-exercises-choice .no-exercises-choice {
+    color: #dc3545;
+    font-style: italic;
+}
+
+.select-exercise-button-choice {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    cursor: pointer;
+    font-size: 2rem;
+    align-self: flex-end;
+    flex: 0 0 auto;
+}
+
+.select-exercise-button-choice:hover {
+    background-color: #45a049;
+}
+
+.select-exercise-button-choice.selected {
+    background-color: #4CAF50;
+}
+
+.select-exercise-button-choice.selected:hover {
+    background-color: #45a049; 
+}
+
+.submit-selection-button-choice {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.submit-selection-button-choice:hover {
+    background-color: #45a049;
+}
+
+.submit-remove-button-choice {
+    background-color: #f44336;
+    color: white;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.submit-remove-button-choice:hover {
+    background-color: #e53935;
+}
+
+@media (max-width: 64rem) {
+    .exercise-item-exercises-choice {
+        padding: 2.5rem;
+    }
+
+    .exercise-photo-exercises-choice {
+        min-width: 20rem;
+        max-width: 25rem;
+    }
+
+    .exercise-info-exercises-choice {
+        min-width: 25rem;
+    }
+
+    .exercise-name-exercises-choice {
+        font-size: 3rem;
+    }
+
+    .exercise-duration-exercises-choice,
+    .exercise-personalized-exercises-choice {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .exercise-item-exercises-choice {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        padding: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .exercise-photo-exercises-choice {
+        margin-bottom: 2rem;
+        min-width: 25rem;
+        max-width: 30rem;
+    }
+
+    .exercise-info-exercises-choice {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .exercise-header-exercises-choice {
+        align-items: center;
+    }
+
+    .exercise-name-exercises-choice {
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .exercise-duration-exercises-choice,
+    .exercise-personalized-exercises-choice {
+        font-size: 4rem;
+    }
+
+    .exercise-duration-personalized-exercises-choice {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .exercise-item-exercises-choice {
+        padding: 5rem;
+    }
+
+    .exercise-photo-exercises-choice {
+        min-width: 30rem;
+        max-width: 35rem;
+    }
+
+    .exercise-info-exercises-choice {
+        min-width: 30rem;
+    }
+
+    .exercise-name-exercises-choice {
+        font-size: 6rem;
+    }
+
+    .exercise-duration-exercises-choice,
+    .exercise-personalized-exercises-choice {
+        font-size: 4.5rem;
+    }
+}

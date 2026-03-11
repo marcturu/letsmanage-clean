@@ -1,0 +1,121 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.app-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 35px; 
+    width: 90%;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 10px 10px 60px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    box-sizing: border-box; 
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 18px;
+}
+
+.underline {
+    display: block;
+    height: 2px;
+    background-color: #007BFF;
+    transition: width 0.3s ease;
+}
+
+.input:focus + .underline {
+    width: 100%;
+}
+
+.button-login-page {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button-login-page {
+    background-color: #007BFF;
+    color: white;
+}
+
+.back-button-login-page {
+    background-color: #9f230d;
+    color: white;
+    margin-top: 10px;
+}
+
+.button-login-page:hover {
+    transform: translateY(-2px) scale(1.05);
+    color: black;
+    font-size: 1.25em; 
+    font-weight: bold; 
+}
+
+.login-button-login-page:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 15px rgba(0, 86, 179, 0.5);
+}
+
+.back-button-login-page:hover {
+    background-color: #ac1212;
+    box-shadow: 0 8px 15px rgba(34, 139, 34, 0.5);
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+

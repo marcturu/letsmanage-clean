@@ -1,0 +1,311 @@
+.main-container-exercises {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+.content-exercises {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-exercises {
+    width: 100%;
+    background-color: #dddddd;
+    padding: 0.5vw;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.app-title-exercises {
+    font-size: 3vw;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.filter-exercises {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3vw;
+    margin: 2vw 0;
+    align-items: center;
+}
+
+.filter-exercises label {
+    font-size: 1.6vw;
+    color: black;
+    font-weight: 600;
+}
+
+.filter-exercises select {
+    padding: 0.6vw;
+    font-size: 1.4vw;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+}
+
+.filter-exercises select:focus {
+    background-color: #ffffff;
+}
+
+.toggle-container-exercises {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 0vw;
+}
+
+.toggle-label-exercises {
+    font-size: 1.6vw;
+    color: black;
+    font-weight: 600;
+    margin-right: 0.75vw; 
+}
+
+.toggle-switch-exercises {
+    position: relative;
+    display: inline-block;
+    width: 4vw;
+    height: 2vw;
+    background-color: #ccc;
+    border-radius: 2vw;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.toggle-switch-exercises input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-switch-exercises .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.toggle-switch-exercises input:checked + .slider {
+    transform: translateX(2vw);
+    background-color: #3dec55;
+}
+
+.error-exercises {
+    color: red;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.exercises-list-exercises {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    margin-top: 2vw;
+}
+
+.exercise-item-exercises {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5vw;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    max-width: 97%;
+    margin-bottom: 1.5vw;
+    transition: all 0.3s ease;
+    align-items: center; 
+}
+
+.exercise-item-exercises:hover {
+    background-color: #333333;
+    color: white;
+    box-shadow: 0vw 1.1vw 1.4vw rgba(0, 0, 0, 0.65);
+}
+
+.exercise-item-exercises:hover .exercise-photo-exercises img {
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: brightness(1.3);
+}
+
+.exercise-photo-exercises {
+    flex: 1;
+    min-width: 18vw;
+    max-width: 22vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5vw;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 100%; 
+}
+
+.exercise-photo-exercises img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.exercise-info-exercises {
+    flex: 2;
+    min-width: 22vw;
+    margin-left: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; 
+    justify-content: flex-start; 
+}
+
+.exercise-header-exercises {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: flex-start;
+}
+
+.exercise-name-exercises {
+    font-size: 2.2vw;
+    margin-bottom: 1vw;
+}
+
+.exercise-item-exercises:hover .exercise-name-exercises,
+.exercise-item-exercises:hover .exercise-duration-exercises,
+.exercise-item-exercises:hover .exercise-personalized-exercises {
+    color: white;
+}
+
+.exercise-duration-personalized-exercises {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1.5vw;
+    gap: 1vw;
+}
+
+.exercise-duration-exercises, .exercise-personalized-exercises {
+    font-size: 1.4vw;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.exercise-duration-icon-exercises, .exercise-personalized-icon-exercises {
+    font-size: 1.8vw;
+    margin-right: 1vw;
+}
+
+.exercise-personalized-exercises .yes-exercises {
+    color: #3dec55;
+    font-style: italic;
+}
+
+.exercise-personalized-exercises .no-exercises {
+    color: #dc3545;
+    font-style: italic;
+}
+
+@media (max-width: 1024px) {
+    .exercise-item-exercises {
+        padding: 2.5vw;
+    }
+
+    .exercise-photo-exercises {
+        min-width: 20vw;
+        max-width: 25vw;
+    }
+
+    .exercise-info-exercises {
+        min-width: 25vw;
+    }
+
+    .exercise-name-exercises {
+        font-size: 3vw;
+    }
+
+    .exercise-duration-exercises, .exercise-personalized-exercises {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .exercise-item-exercises {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        padding: 4vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .exercise-photo-exercises {
+        margin-bottom: 2vw;
+        min-width: 25vw;
+        max-width: 30vw;
+    }
+
+    .exercise-info-exercises {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .exercise-header-exercises {
+        align-items: center;
+    }
+
+    .exercise-name-exercises {
+        font-size: 5vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .exercise-duration-exercises, .exercise-personalized-exercises {
+        font-size: 4vw;
+    }
+
+    .exercise-duration-personalized-exercises {
+        gap: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .exercise-item-exercises {
+        padding: 5vw;
+    }
+
+    .exercise-photo-exercises {
+        min-width: 30vw;
+        max-width: 35vw;
+    }
+
+    .exercise-info-exercises {
+        min-width: 30vw;
+    }
+
+    .exercise-name-exercises {
+        font-size: 6vw;
+    }
+
+    .exercise-duration-exercises, .exercise-personalized-exercises {
+        font-size: 4.5vw;
+    }
+}

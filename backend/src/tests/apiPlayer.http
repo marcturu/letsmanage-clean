@@ -1,0 +1,34 @@
+### Get Players by Team
+GET http://localhost:5000/users/Marc/teams/Pª%20BLAUGRANA%20RAMON%20LLORENS_amateur_a_Marc/players
+
+### Get Player by ID
+GET http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_prebenjamí_a/players/marc_turu_roca
+
+### Create a new player instance
+POST http://localhost:5000/users/Marc/teams/Pª%20BLAUGRANA%20RAMON%20LLORENS_amateur_a_Marc/players
+Content-Type:application/json
+
+{
+  "name": "Marc",
+  "surname": "Turu",
+  "surname2": "Roca",
+  "height": 180,
+  "weight": 70,
+  "phone": "618043499",
+  "mail": "marc.turu@gmail.com",
+  "DNI": "54755698S",
+  "birthdate": "25/04/2002",
+  "nationality": "Spanish",
+  "number": 6
+}
+
+### Update player 
+PATCH http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_prebenjamí_a/players/roger_viusà_roca
+Content-Type:application/json
+
+{
+  "height": 170
+}
+
+### Delete Player by ID
+DELETE http://localhost:5000/users/Marc/teams/Pª BLAUGRANA RAMON LLORENS_amateur_a_Marc/players/aniol_cardus_roca

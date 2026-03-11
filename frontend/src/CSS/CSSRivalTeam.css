@@ -1,0 +1,229 @@
+.main-container-rival-team {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+.content-rival-team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-rival-team {
+    width: 100%;
+    background-color: #dddddd;
+    padding: 1vw;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.team-header-rival-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+
+.rival-team-photo {
+    flex: 1;
+    min-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.rival-team-photo img {
+    width: 10%;
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+}
+
+.rival-team-id {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+
+.rival-team-id1 h1,
+.rival-team-id2 h1 {
+    margin: 0;
+    font-size: 2.25vw;
+    text-align: center;
+}
+
+.rival-team-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vw;
+    padding: 2vw;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.rival-team-stats {
+    flex: 1 1 30%;
+    margin-bottom: 1vw;
+}
+
+.rival-team-stats h2 {
+    font-size: 1.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.rival-team-stats p {
+    font-size: 1.2vw;
+    margin-bottom: 1.5vw;
+}
+
+.rival-team-stats-row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1vw;
+    justify-content: space-between;
+}
+
+.rival-team-stats-row-especial {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+    gap: 2vw; 
+}
+
+.rival-team-stats-row-especial .rival-team-stats-item {
+    flex: 1; 
+    min-width: calc(20% - 1vw);
+}
+
+.rival-team-stats-item:last-child {
+    margin-right: 0;
+}
+
+.rival-team-stats-row:first-child .rival-team-stats-item {
+    min-width: 100%;
+    margin-right: 0;
+}
+
+.rival-team-stats-row:nth-child(2) .rival-team-stats-item {
+    min-width: calc(25% - 1vw);
+}
+
+.rival-team-stats-row:nth-child(3) .rival-team-stats-item {
+    min-width: calc(25% - 1vw);
+}
+
+.edit-rivalteam-button button {
+    padding: 1em 1.5em; 
+    font-size: 1.5em; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; 
+    height: auto; 
+}
+
+.edit-rivalteam-button button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor del spinner */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .rival-team-header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rival-team-photo img {
+        width: 70%;
+        height: auto;
+    }
+
+    .rival-team-id1 h1 {
+        font-size: 4vw;
+    }
+
+    .rival-team-id2 h1 {
+        font-size: 4vw;
+    }
+
+    .rival-team-info {
+        flex-direction: column;
+        padding: 3vw;
+    }
+
+    .rival-team-stats {
+        flex: 1;
+        margin-bottom: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .rival-team-photo img {
+        width: 80%;
+    }
+
+    .rival-team-id1 h1 {
+        font-size: 5vw;
+    }
+
+    .rival-team-id2 h1 {
+        font-size: 5vw;
+    }
+
+    .rival-team-info {
+        padding: 4vw;
+    }
+
+    .rival-team-stats h2 {
+        font-size: 5vw;
+    }
+
+    .rival-team-stats p {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+    }
+}

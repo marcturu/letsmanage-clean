@@ -1,0 +1,291 @@
+.main-container-rival-teams {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+.content-rival-teams {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-title-rival-teams {
+    font-size: 3vw;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.teams-list-rival-teams {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    margin-top: 2vw;
+}
+
+.team-item-rival-teams {
+    display: flex;
+    width: 100%;
+    padding: 1.5vw;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.team-item-rival-teams:hover {
+    background-color: #333333;
+    color: white;
+    box-shadow: 0 1.1vw 1.4vw rgba(0, 0, 0, 0.65);
+}
+
+.team-item-rival-teams:hover .team-category-rival-teams,
+.team-item-rival-teams:hover .team-letter-rival-teams,
+.team-item-rival-teams:hover .team-club-rival-teams,
+.team-item-rival-teams:hover .team-pointsRatio-rival-teams {
+    color: white;
+}
+
+.team-photo-rival-teams {
+    flex-shrink: 0;
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.team-photo-rival-teams img {
+    width: auto;
+    height: 95%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.team-info-rival-teams {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.team-header-rival-teams {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: flex-start;
+}
+
+.team-category-letter-rival-teams {
+    display: flex;
+    gap: 0.5vw;
+}
+
+.team-category-rival-teams,
+.team-letter-rival-teams {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.team-club-rival-teams {
+    font-size: 1.6vw;
+    font-weight: normal;
+}
+
+.team-points-ratio-rival-teams {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-right: 5vw;
+}
+
+.team-pointsRatio-rival-teams {
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+
+.error-rival-teams {
+    color: red;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.delete-team-button-rival-teams.active {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-team-button-rival-teams {
+    border: none;
+    font-size: 1.2vw;
+    top: 4vw;
+    right: 0vw;
+    padding: 0.5vw 1vw;
+    cursor: pointer;
+    background-color: #e53935;
+    color: white;
+    position: absolute;
+    padding: 0.5vw 1vw;
+
+}
+
+.delete-team-button-rival-teams:hover {
+    background-color: #d33734;
+}
+
+.team-delete-button-rival-teams .delete-circle {
+    font-size: 2vw;
+    color: #d32f2f;
+    border: 2px solid #d32f2f;
+    border-radius: 50%;
+    padding: 0.8vw;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    left: -5.5vw; 
+    top: 5vw;
+
+}
+
+.team-delete-button-rival-teams .delete-circle.selected {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.team-delete-button-rival-teams .delete-circle:hover {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.submit-button-delete-rival-teams {
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    border-radius: 5vw;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    margin-top: 2vw; 
+}
+
+.no-rivalteams-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 20%;
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.no-rivalteams-found i {
+    font-size: 3rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.no-rivalteams-found p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    animation: textFadeIn 1s ease-in-out 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .team-item-rival-teams {
+        padding: 2.5vw;
+    }
+
+    .team-photo-rival-teams {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .team-category-rival-teams,
+    .team-letter-rival-teams {
+        font-size: 3vw;
+    }
+
+    .team-club-rival-teams {
+        font-size: 2.5vw;
+    }
+
+    .team-pointsRatio-rival-teams {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-item-rival-teams {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        padding: 4vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .team-photo-rival-teams {
+        margin-bottom: 2vw;
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .team-info-rival-teams {
+        margin-left: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .team-category-letter-rival-teams {
+        justify-content: center;
+    }
+
+    .team-header-rival-teams {
+        align-items: center;
+    }
+}

@@ -1,0 +1,14 @@
+### Get all exercises
+GET http://localhost:5000/exercises
+
+### Get Exercise by ID
+GET http://localhost:5000/exercises/Duels 1
+
+### Get All by Type
+GET http://localhost:5000/exercises?type=duels
+
+### Get All by Personalized
+GET http://localhost:5000/exercises?personalized=true
+
+### Get All by Type & Personalized
+GET http://localhost:5000/exercises?type=duels&personalized=true

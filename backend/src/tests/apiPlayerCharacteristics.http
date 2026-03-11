@@ -1,0 +1,19 @@
+### Get by Player
+GET http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_prebenjamí_n/players/marc_turu_roca/playercharacteristics
+
+### Update PlayerCharacteristics 
+PATCH http://localhost:5000/users/Marc/teams/ESCOLA DE FUTBOL CAN MIR-RUBI CLUB_aleví_n/players/marc_turu_roca/playercharacteristics
+Content-Type:application/json
+
+{
+  "position1": "LB",
+  "position2": "RB",
+  "dominantFoot": "Left",
+  "avgTechnicalLevel": 7.5,
+  "avgTacticalLevel": 8.0,
+  "avgFatigue": 5.0,
+  "avgHeartRate": 80,
+  "personalLifeLevel": 8,
+  "drugUseLevel": 2,
+  "allergies": ["nuts"]
+}

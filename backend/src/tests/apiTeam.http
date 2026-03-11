@@ -1,0 +1,48 @@
+### Get all Teams
+GET http://localhost:5000/users/Aida/teams
+
+### Get Team by ID
+GET http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_prebenjamí_a_Marc
+
+### Get all Rival Teams
+GET http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_prebenjamí_a_Marc/rival_teams
+
+### Get Rival Team by ID
+GET http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_prebenjamí_a_Marc/rival_teams/CAN BOADA, C.F._prebenjamí_a_Marc
+
+### Create a new my team instance
+POST http://localhost:5000/users/Aida/teams
+Content-Type:application/json
+
+{
+  "category": "Infantil",
+  "club": "RUBI, U.E.",
+  "coach": "Marc",
+  "league": "INFANTIL PRIMERA DIVISIÓ S13 9",
+  "letter": "A",
+  "creator": "Aida"
+}
+
+### UPDATE [CORRECT]
+PATCH http://localhost:5000/users/Marc/teams/ESCOLA%20PIA%20TERRASSA%20juvenil%20b
+Content-Type:application/json
+
+{
+  "points": "3"
+}
+
+### Delete Team by ID
+DELETE http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_prebenjamí_a
+
+
+### Create a new rival team instance
+POST http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_prebenjamí_a_Marc/rival_teams
+Content-Type:application/json
+
+{
+  "category": "Prebenjamí",
+  "club": "RUBI, U.E.",
+  "league": "Consell Escolar Prebenjamí Grup A",
+  "letter": "B",
+  "creator": "Marc"
+}

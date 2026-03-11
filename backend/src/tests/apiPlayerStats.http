@@ -1,0 +1,16 @@
+### Get by Player
+GET http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_prebenjamí_n/players/marc_turu_roca/playerstats
+
+### Update PlayerStats 
+PATCH http://localhost:5000/users/Marc/teams/ESCOLA DE FUTBOL CAN MIR-RUBI CLUB_aleví_n/players/marc_turu_roca/playerstats
+Content-Type:application/json
+
+{
+  "timePlayed": 90,
+  "goals": 1,
+  "assists": 3,
+  "yellowCards": 1,
+  "redCards": 1,
+  "shots": 4,
+  "shotsOnTarget": 2
+}

@@ -1,0 +1,45 @@
+### Get all Matches by User
+GET http://localhost:5000/users/Marc/matches
+
+### Get all Matches by User & Team
+GET http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_infantil_b_Marc/matches
+
+### Get by Id [1/2]
+GET http://localhost:5000/users/Marc/matches/ESCOLA PIA TERRASSA_infantil_b_Marc_Jornada 1
+
+### Get by Id [2/2]
+GET http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_infantil_b_Marc/matches/ESCOLA PIA TERRASSA_infantil_b_Marc_Jornada 1
+
+### Create Match
+POST http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_infantil_b_Marc/matches
+Content-Type:application/json
+
+{
+  "name": "ESCOLA PIA TERRASSA_infantil_b_Marc_Jornada 51",
+  "myTeam": "ESCOLA PIA TERRASSA_infantil_b_Marc",
+  "rivalTeam": "AGORA SANT CUGAT SPORTS CLUB_infantil_a_Marc", 
+  "city": "Terrassa", 
+  "address": "Cami de Can boada", 
+  "date": "23/04/2025", 
+  "hour": "21:00", 
+  "imLocal": true, 
+  "finished": false, 
+  "formation": 433, 
+  "calledups": ["a_turu_rocaa", "aniol_cardus_roca", "aniol_turu_roca", "b_turu_rocaa", "c_turu_rocaa", "d_turu_rocaa", "e_turu_rocaa", "f_turu_rocaa", "g_turu_rocaa", 
+  "h_turu_rocaa", "j_turu_rocaa", "y_turu_rocaa"], 
+  "starters": ["a_turu_rocaa", "aniol_cardus_roca", "aniol_turu_roca", "b_turu_rocaa", "c_turu_rocaa", "d_turu_rocaa", "e_turu_rocaa", "f_turu_rocaa", "g_turu_rocaa", 
+  "h_turu_rocaa", "j_turu_rocaa"]
+}
+
+### Update Match 
+PATCH http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_infantil_b_Marc/matches/ESCOLA PIA TERRASSA_infantil_b_Marc_Jornada 2
+Content-Type:application/json
+
+{
+  "finished" : false,
+  "localGoals": 11,
+  "formation": 422
+}
+
+### Delete Match
+DELETE http://localhost:5000/users/Marc/teams/ESCOLA PIA TERRASSA_infantil_b_Marc/matches/ESCOLA PIA TERRASSA_infantil_b_Marc_Jornada 1
