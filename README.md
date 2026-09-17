@@ -88,10 +88,10 @@ You can try the application using either the Vercel deployment (for visual testi
 ### c1. Watch the Demo
 🎥 **A [Recorded Demo](https://www.dropbox.com/scl/fi/1v3ebhhl6el0m06dv9ois/Demo-TFG.mkv?rlkey=lrag32bxkw3mcgj7y3qejwunz&e=1&st=5mnw1007&dl=0) is also available**.
 
----
-### Deployed source code for:
-### - [Frontend repo](https://github.com/marcturu/deploy-frontend)
-### - [Backend repo](https://github.com/marcturu/deploy-backend)
+--- 
+
+#### The **[Original repo](https://github.com/marcturu/LetsManage)** is private due to privacy and confidentiality reasons,  
+#### as well as the deployed source code for the **[Frontend repo](https://github.com/marcturu/deploy-frontend)** and the **[Backend repo](https://github.com/marcturu/deploy-backend)**.
 
 ---
 
