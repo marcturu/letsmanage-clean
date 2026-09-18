@@ -20,6 +20,10 @@ Coaches can track player needs, plan training sessions, and design match strateg
 - **Responsive Design** for desktop and tablet use.
 - Scrum format tracked through [Taiga](https://tree.taiga.io/project/marcturu-letsmanage/timeline) (last images in the README).
 
+> **ℹ️ Project status:**  
+> This project was originally developed in **late 2024** and **throughout 2025**, with a strong focus on functionality, software architecture, and project management. As my design and UX/UI skills have evolved since then, some aspects of the current UI and visual design could be further refined. The screenshots and demo therefore reflect the state of the application at the time of its development rather than my current design standards. Improving the UI/UX would be one of the main areas I would address in a future iteration.
+
+
 ---
 
 ## 🛠 Installation & Setup
