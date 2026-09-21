@@ -80,7 +80,7 @@ You can try the application using either the Vercel deployment (for visual testi
 - **Heroku (API testing):**  
   [https://lets-manage-7d2ea4f309ff.herokuapp.com/](https://lets-manage-7d2ea4f309ff.herokuapp.com/) 
 
-> ℹ️ **Note:** For the Heroku deployment to work, the dynos must be active.  
+> ⚠️ **Note:** For the Heroku deployment to work, the dynos must be active.  
 > 1. Go to [Heroku Dashboard](https://dashboard.heroku.com/apps/lets-manage/)  
 > 2. Navigate to **Resources** and activate the dynos.
 
