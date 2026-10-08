@@ -73,10 +73,10 @@ The app will be available at **http://localhost:3000** (frontend) and **http://l
 ### b1. Try the web application
 You can try the application using either the Vercel deployment (for visual testing in the browser) or the Heroku deployment (to test API routes).
 
-- **Vercel - WebApp**: [https://lets-manage-lake.vercel.app/](https://lets-manage-lake.vercel.app/)
+- **Vercel - WebApp**: [https://lets-manage-lake.vercel.app/](https://lets-manage-lake.vercel.app/)  
   Recommended for testing the user interface directly in the browser. 
 
-- **Heroku - API**: [https://lets-manage-7d2ea4f309ff.herokuapp.com/](https://lets-manage-7d2ea4f309ff.herokuapp.com/)
+- **Heroku - API**: [https://lets-manage-7d2ea4f309ff.herokuapp.com/](https://lets-manage-7d2ea4f309ff.herokuapp.com/)  
   Used to test the applciation's backend API.
 
 > 🔋 **Heroku availability:** The Heroku backend may be temporarily unavailable when its Dynos are inactive. If the API is not responding, please contact me so I can activate the Dynos by:  
