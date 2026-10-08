@@ -73,18 +73,18 @@ The app will be available at **http://localhost:3000** (frontend) and **http://l
 ### b1. Try the web application
 You can try the application using either the Vercel deployment (for visual testing in the browser) or the Heroku deployment (to test API routes).
 
-- **Vercel (browser testing):**  
-  WebApp: [https://lets-manage-lake.vercel.app/](https://lets-manage-lake.vercel.app/)  
-  Project on Vercel: [https://vercel.com/marcs-projects-4add0205/lets-manage](https://vercel.com/marcs-projects-4add0205/lets-manage)
+- **Vercel - WebApp**: [https://lets-manage-lake.vercel.app/](https://lets-manage-lake.vercel.app/)
+  Recommended for testing the user interface directly in the browser. 
 
-- **Heroku (API testing):**  
-  [https://lets-manage-7d2ea4f309ff.herokuapp.com/](https://lets-manage-7d2ea4f309ff.herokuapp.com/) 
+- **Heroku - API**: [https://lets-manage-7d2ea4f309ff.herokuapp.com/](https://lets-manage-7d2ea4f309ff.herokuapp.com/)
+  Used to test the applciation's backend API.
 
-> 🔋 **Note:** For the Heroku deployment to work, the dynos must be active.  
-> 1. Go to [Heroku Dashboard](https://dashboard.heroku.com/apps/lets-manage/)  
-> 2. Navigate to **Resources** and activate the dynos.
+> 🔋 **Heroku availability:** The Heroku backend may be temporarily unavailable when its Dynos are inactive. If the API is not responding, please contact me so I can activate the Dynos by:  
+> 1. Going to [Heroku Dashboard](https://dashboard.heroku.com/apps/lets-manage/)  
+> 2. Navigating to **Resources** and activate the dynos.
 
-> ℹ️ **Checking for errors:**  
+> ℹ️ **Checking API errors:**
+If you are contributing to or debugging the project, you can inspect the Heroku logs using the Heroku CLI:
 > 1. Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)  
 > 2. Run `$ heroku login`  
 > 3. Run `$ heroku logs --tail -a lets-manage`
