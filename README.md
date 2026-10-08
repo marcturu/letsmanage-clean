@@ -80,8 +80,8 @@ You can try the application using either the Vercel deployment (for visual testi
   Used to test the applciation's backend API.
 
 > 🔋 **Heroku availability:** The Heroku backend may be temporarily unavailable when its Dynos are inactive. If the API is not responding, please contact me so I can activate the Dynos by:  
-> 1. Going to [Heroku Dashboard](https://dashboard.heroku.com/apps/lets-manage/)  
-> 2. Navigating to **Resources** and activate the dynos.
+> 1. Going to the [Heroku Dashboard](https://dashboard.heroku.com/apps/lets-manage/).
+> 2. Navigating to **Resources** and activating the dynos.
 
 > ℹ️ **Checking API errors:**
 If you are contributing to or debugging the project, you can inspect the Heroku logs using the Heroku CLI:
