@@ -1,4 +1,4 @@
-# <img src="screenshots/LetsManage.png" alt="LetsManage" width="150"/> — Management app for football coaches   
+# <img src="screenshots/LetsManage.png" alt="LetsManage" width="150"/> — Management app for football coaches
 
 <sub>🗓️ Final Thesis developed in January 2025</sub>
 
